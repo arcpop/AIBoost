@@ -1,0 +1,9 @@
+name="AIBoost"
+path="mod/aiboost"
+tags={
+	"Balance"
+	"Gameplay"
+	"Fixes"
+}
+remote_file_id="913763798"
+supported_version="1.5.1"
