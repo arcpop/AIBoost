@@ -3,7 +3,18 @@ namespace = aiboost
 ##############################
 # A new event every 10 years until 100 yrs, then one for 150 and 200
 ##############################
+country_event = {
+    id = aiboost.1
+    hide_window = yes
+    trigger {
+        NOT = { has_global_flag = aiboost_initialized }
+    }
+    immediate = {
+        set_global_flag = aiboost_initialized
+        country_event = { id = aiboost.100 }
+    }
 
+}
 country_event = {
     id = aiboost.100
     hide_window = yes
