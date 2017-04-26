@@ -1,0 +1,49 @@
+namespace = synthab
+
+country_event = {
+    id = synthab.2
+    hide_window = yes
+    
+    trigger = {
+            is_ai = no
+            has_country_flag = synthetic_age
+            NOT = { has_country_flag = synth_autobuild_started }
+    }
+
+    immediate = {
+        set_country_flag = synth_autobuild_started
+        every_owned_planet = {
+            limit = {
+                any_tile = {
+                    has_blocker = no
+                    has_grown_pop = no
+                    has_growing_pop = no
+                }
+                NOT = {
+                    any_pop = {
+                        is_robot_pop = yes
+                        is_growing = yes
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    owner = {
+                        energy > 1000
+                        minerals > 500
+                    }
+                }
+                build_pop = {
+                    name = buildable_robot_pop_4
+                    grown = no
+                }
+                owner = {
+                    add_minerals = -50
+                    add_energy = -150
+                }
+            }
+        }
+        country_event = { id = synthab.2 days = 30 }
+    }
+
+}

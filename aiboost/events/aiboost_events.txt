@@ -6,7 +6,7 @@ namespace = aiboost
 country_event = {
     id = aiboost.1
     hide_window = yes
-    trigger {
+    trigger = {
         NOT = { has_global_flag = aiboost_initialized }
     }
     immediate = {
