@@ -1,52 +1,51 @@
 aiboost_resource_modifier_00 = {
 	name = "AIBoost Bonus"
-	tile_resource_energy_mult = 0.03
-	tile_resource_minerals_mult = 0.03
-}
-aiboost_resource_modifier_10 = {
-	name = "AIBoost Bonus"
 	tile_resource_energy_mult = 0.05
 	tile_resource_minerals_mult = 0.05
-}
-aiboost_resource_modifier_20 = {
+}aiboost_resource_modifier_10 = {
 	name = "AIBoost Bonus"
 	tile_resource_energy_mult = 0.10
 	tile_resource_minerals_mult = 0.10
 }
+aiboost_resource_modifier_20 = {
+	name = "AIBoost Bonus"
+	tile_resource_energy_mult = 0.20
+	tile_resource_minerals_mult = 0.20
+}
 aiboost_resource_modifier_30 = {
 	name = "AIBoost Bonus"
-	tile_resource_energy_mult = 0.15
-	tile_resource_minerals_mult = 0.15
+	tile_resource_energy_mult = 0.30
+	tile_resource_minerals_mult = 0.30
 }
 aiboost_resource_modifier_40 = {
 	name = "AIBoost Bonus"
-	tile_resource_energy_mult = 0.25
-	tile_resource_minerals_mult = 0.25
+	tile_resource_energy_mult = 0.40
+	tile_resource_minerals_mult = 0.40
 }
 aiboost_resource_modifier_50 = {
-	name = "AIBoost Bonus"
-	tile_resource_energy_mult = 0.35
-	tile_resource_minerals_mult = 0.35
-}
-aiboost_resource_modifier_60 = {
 	name = "AIBoost Bonus"
 	tile_resource_energy_mult = 0.50
 	tile_resource_minerals_mult = 0.50
 }
-aiboost_resource_modifier_70 = {
+aiboost_resource_modifier_60 = {
 	name = "AIBoost Bonus"
 	tile_resource_energy_mult = 0.65
 	tile_resource_minerals_mult = 0.65
 }
-aiboost_resource_modifier_80 = {
+aiboost_resource_modifier_70 = {
 	name = "AIBoost Bonus"
 	tile_resource_energy_mult = 0.80
 	tile_resource_minerals_mult = 0.80
 }
+aiboost_resource_modifier_80 = {
+	name = "AIBoost Bonus"
+	tile_resource_energy_mult = 1.0
+	tile_resource_minerals_mult = 1.0
+}
 aiboost_resource_modifier_90 = {
 	name = "AIBoost Bonus"
-	tile_resource_energy_mult = 1.00
-	tile_resource_minerals_mult = 1.00
+	tile_resource_energy_mult = 1.20
+	tile_resource_minerals_mult = 1.20
 }
 aiboost_resource_modifier_100 = {
 	name = "AIBoost Bonus"

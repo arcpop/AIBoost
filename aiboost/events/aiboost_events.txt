@@ -1,626 +1,341 @@
 namespace = aiboost
 
-##############################
-# A new event every 10 years until 100 yrs, then one for 150 and 200
-##############################
+
 country_event = {
     id = aiboost.1
     hide_window = yes
     trigger = {
+        is_ai = no
         NOT = { has_global_flag = aiboost_initialized }
     }
     immediate = {
         set_global_flag = aiboost_initialized
-        country_event = { id = aiboost.100 }
+        every_country = {
+            limit = {
+                is_ai = yes
+                is_country_type = default
+            }
+            hidden_effect = {
+                add_modifier = {
+                    modifier = "aiboost_resource_modifier_00"
+                    days = 3600
+                }
+            }
+        }
+        country_event = { id = aiboost.10 days = 3600 }
     }
-
 }
+
+country_event = {
+    id = aiboost.10
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_country = {
+            limit = {
+                is_ai = yes
+                is_country_type = default
+            }
+            hidden_effect = {
+                add_modifier = {
+                    modifier = "aiboost_resource_modifier_10"
+                    days = 3600
+                }
+                add_modifier = {
+                    modifier = "aiboost_spaceport_modifier_1"
+                    days = 3600
+                }
+            }
+        }
+        country_event = { id = aiboost.20 days = 3600 }
+    }
+}
+
+country_event = {
+    id = aiboost.20
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_country = {
+            limit = {
+                is_ai = yes
+                is_country_type = default
+            }
+            hidden_effect = {
+                add_modifier = {
+                    modifier = "aiboost_resource_modifier_20"
+                    days = 3600
+                }
+                add_modifier = {
+                    modifier = "aiboost_spaceport_modifier_1"
+                    days = 3600
+                }
+            }
+        }
+        country_event = { id = aiboost.30 days = 3600 }
+    }
+}
+
+country_event = {
+    id = aiboost.30
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_country = {
+            limit = {
+                is_ai = yes
+                is_country_type = default
+            }
+            hidden_effect = {
+                add_modifier = {
+                    modifier = "aiboost_resource_modifier_30"
+                    days = 3600
+                }
+                add_modifier = {
+                    modifier = "aiboost_spaceport_modifier_1"
+                    days = 3600
+                }
+            }
+        }
+        country_event = { id = aiboost.40 days = 3600 }
+    }
+}
+
+country_event = {
+    id = aiboost.40
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_country = {
+            limit = {
+                is_ai = yes
+                is_country_type = default
+            }
+            hidden_effect = {
+                add_modifier = {
+                    modifier = "aiboost_resource_modifier_40"
+                    days = 3600
+                }
+                add_modifier = {
+                    modifier = "aiboost_spaceport_modifier_1"
+                    days = 3600
+                }
+            }
+        }
+        country_event = { id = aiboost.50 days = 3600 }
+    }
+}
+
+country_event = {
+    id = aiboost.50
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_country = {
+            limit = {
+                is_ai = yes
+                is_country_type = default
+            }
+            hidden_effect = {
+                add_modifier = {
+                    modifier = "aiboost_resource_modifier_50"
+                    days = 3600
+                }
+                add_modifier = {
+                    modifier = "aiboost_spaceport_modifier_1"
+                    days = 3600
+                }
+            }
+        }
+        country_event = { id = aiboost.60 days = 3600 }
+    }
+}
+
+country_event = {
+    id = aiboost.60
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_country = {
+            limit = {
+                is_ai = yes
+                is_country_type = default
+            }
+            hidden_effect = {
+                add_modifier = {
+                    modifier = "aiboost_resource_modifier_60"
+                    days = 3600
+                }
+                add_modifier = {
+                    modifier = "aiboost_spaceport_modifier_2"
+                    days = 3600
+                }
+            }
+        }
+        country_event = { id = aiboost.70 days = 3600 }
+    }
+}
+
+country_event = {
+    id = aiboost.70
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_country = {
+            limit = {
+                is_ai = yes
+                is_country_type = default
+            }
+            hidden_effect = {
+                add_modifier = {
+                    modifier = "aiboost_resource_modifier_70"
+                    days = 3600
+                }
+                add_modifier = {
+                    modifier = "aiboost_spaceport_modifier_2"
+                    days = 3600
+                }
+            }
+        }
+        country_event = { id = aiboost.80 days = 3600 }
+    }
+}
+
+country_event = {
+    id = aiboost.80
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_country = {
+            limit = {
+                is_ai = yes
+                is_country_type = default
+            }
+            hidden_effect = {
+                add_modifier = {
+                    modifier = "aiboost_resource_modifier_80"
+                    days = 3600
+                }
+                add_modifier = {
+                    modifier = "aiboost_spaceport_modifier_2"
+                    days = 3600
+                }
+            }
+        }
+        country_event = { id = aiboost.90 days = 3600 }
+    }
+}
+
+country_event = {
+    id = aiboost.90
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_country = {
+            limit = {
+                is_ai = yes
+                is_country_type = default
+            }
+            hidden_effect = {
+                add_modifier = {
+                    modifier = "aiboost_resource_modifier_90"
+                    days = 3600
+                }
+                add_modifier = {
+                    modifier = "aiboost_spaceport_modifier_2"
+                    days = 3600
+                }
+            }
+        }
+        country_event = { id = aiboost.100 days = 3600 }
+    }
+}
+
 country_event = {
     id = aiboost.100
     hide_window = yes
     is_triggered_only = yes
+
     immediate = {
         every_country = {
             limit = {
                 is_ai = yes
                 is_country_type = default
             }
-            country_event = { id = aiboost.200 }
-        }
-        if = {
-            limit = {
-                years_passed > 10
+            hidden_effect = {
+                add_modifier = {
+                    modifier = "aiboost_resource_modifier_100"
+                    days = 3600
+                }
+                add_modifier = {
+                    modifier = "aiboost_spaceport_modifier_2"
+                    days = 3600
+                }
             }
-            country_event = { id = aiboost.101 days = 365 }
-            else = {
-                country_event = { id = aiboost.100 days = 365 }
-            }
         }
+        country_event = { id = aiboost.150 days = 18000 }
     }
 }
 
 country_event = {
-    id = aiboost.101
+    id = aiboost.150
     hide_window = yes
     is_triggered_only = yes
+
     immediate = {
         every_country = {
-            limit = { 
-                is_ai = yes
-                is_country_type = default
-            }
-            country_event = { id = aiboost.201 }
-        }
-        if = {
             limit = {
-                years_passed > 20
-            }
-            country_event = { id = aiboost.102 days = 365 }
-            else = {
-                country_event = { id = aiboost.101 days = 365 }
-            }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.102
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        every_country = {
-            limit = { 
                 is_ai = yes
                 is_country_type = default
             }
-            country_event = { id = aiboost.202 }
-        }
-        if = {
-            limit = {
-                years_passed > 30
+            hidden_effect = {
+                add_modifier = {
+                    modifier = "aiboost_resource_modifier_150"
+                    days = 18000
+                }
+                add_modifier = {
+                    modifier = "aiboost_spaceport_modifier_2"
+                    days = 18000
+                }
             }
-            country_event = { id = aiboost.103 days = 365 }
-            else = {
-                country_event = { id = aiboost.102 days = 365 }
-            }
         }
+        country_event = { id = aiboost.200 days = 18000 }
     }
 }
-
-country_event = {
-    id = aiboost.103
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        every_country = {
-            limit = { 
-                is_ai = yes
-                is_country_type = default
-            }
-            country_event = { id = aiboost.203 }
-        }
-        if = {
-            limit = {
-                years_passed > 40
-            }
-            country_event = { id = aiboost.104 days = 365 }
-            else = {
-                country_event = { id = aiboost.103 days = 365 }
-            }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.104
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        every_country = {
-            limit = { 
-                is_ai = yes
-                is_country_type = default
-            }
-            country_event = { id = aiboost.204 }
-        }
-        if = {
-            limit = {
-                years_passed > 50
-            }
-           country_event = { id = aiboost.105 days = 365 }
-            else = {
-               country_event = { id = aiboost.104 days = 365 }
-            }
-        }
-    }
-}
-country_event = {
-    id = aiboost.105
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        every_country = {
-            limit = { 
-                is_ai = yes
-                is_country_type = default
-            }
-            country_event = { id = aiboost.205 }
-        }
-        if = {
-            limit = {
-                years_passed > 60
-            }
-           country_event = { id = aiboost.106 days = 365 }
-            else = {
-               country_event = { id = aiboost.105 days = 365 }
-            }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.106
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        every_country = {
-            limit = { 
-                is_ai = yes
-                is_country_type = default
-            }
-            country_event = { id = aiboost.206 }
-        }
-        if = {
-            limit = {
-                years_passed > 70
-            }
-           country_event = { id = aiboost.107 days = 365 }
-            else = {
-               country_event = { id = aiboost.106 days = 365 }
-            }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.107
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        every_country = {
-            limit = { 
-                is_ai = yes
-                is_country_type = default
-            }
-            country_event = { id = aiboost.207 }
-        }
-        if = {
-            limit = {
-                years_passed > 80
-            }
-           country_event = { id = aiboost.108 days = 365 }
-            else = {
-               country_event = { id = aiboost.107 days = 365 }
-            }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.108
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        every_country = {
-            limit = { 
-                is_ai = yes
-                is_country_type = default
-            }
-            country_event = { id = aiboost.208 }
-        }
-        if = {
-            limit = {
-                years_passed > 90
-            }
-           country_event = { id = aiboost.109 days = 365 }
-            else = {
-               country_event = { id = aiboost.108 days = 365 }
-            }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.109
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        every_country = {
-            limit = { 
-                is_ai = yes
-                is_country_type = default
-            }
-            country_event = { id = aiboost.209 }
-        }
-        if = {
-            limit = {
-                years_passed > 100
-            }
-           country_event = { id = aiboost.1100 days = 365 }
-            else = {
-               country_event = { id = aiboost.109 days = 365 }
-            }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.1100
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        every_country = {
-            limit = { 
-                is_ai = yes
-                is_country_type = default
-            }
-            country_event = { id = aiboost.2100 }
-        }
-        if = {
-            limit = {
-                years_passed > 150
-            }
-           country_event = { id = aiboost.1150 days = 365 }
-            else = {
-               country_event = { id = aiboost.1100 days = 365 }
-            }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.1150
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        every_country = {
-            limit = { 
-                is_ai = yes
-                is_country_type = default
-            }
-            country_event = { id = aiboost.2150 }
-        }
-        if = {
-            limit = {
-                years_passed > 200
-            }
-           country_event = { id = aiboost.1200 days = 365 }
-            else = {
-               country_event = { id = aiboost.1150 days = 365 }
-            }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.1200
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        every_country = {
-            limit = { 
-                is_ai = yes
-                is_country_type = default
-            }
-            country_event = { id = aiboost.2200 }
-        }
-       country_event = { id = aiboost.1200 days = 365 }
-    }
-}
-
-
-#########################################
-# The corresponding country events
-#########################################
-
 
 country_event = {
     id = aiboost.200
     hide_window = yes
     is_triggered_only = yes
+
     immediate = {
-        hidden_effect = {
-        add_modifier = {
-            modifier = "aiboost_resource_modifier_00"
-            days = 365
-        }
-        if = {
+        every_country = {
             limit = {
-                is_at_war = no
+                is_ai = yes
+                is_country_type = default
             }
-            add_modifier = {
-                modifier = "aiboost_spaceport_modifier_1"
-                days = 365
-            }
-        }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.201
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-        add_modifier = {
-            modifier = "aiboost_resource_modifier_10"
-            days = 365
-        }
-        if = {
-            limit = {
-                is_at_war = no
-            }
-            add_modifier = {
-                modifier = "aiboost_spaceport_modifier_1"
-                days = 365
-            }
-        }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.202
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-        add_modifier = {
-            modifier = "aiboost_resource_modifier_20"
-            days = 365
-        }
-        if = {
-            limit = {
-                is_at_war = no
-            }
-            add_modifier = {
-                modifier = "aiboost_spaceport_modifier_1"
-                days = 365
-            }
-        }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.203
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-        add_modifier = {
-            modifier = "aiboost_resource_modifier_30"
-            days = 365
-        }
-        if = {
-            limit = {
-                is_at_war = no
-            }
-            add_modifier = {
-                modifier = "aiboost_spaceport_modifier_1"
-                days = 365
-            }
-        }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.204
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-        add_modifier = {
-            modifier = "aiboost_resource_modifier_40"
-            days = 365
-        }
-        if = {
-            limit = {
-                is_at_war = no
-            }
-            add_modifier = {
-                modifier = "aiboost_spaceport_modifier_1"
-                days = 365
-            }
-        }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.205
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-        add_modifier = {
-            modifier = "aiboost_resource_modifier_50"
-            days = 365
-        }
-        if = {
-            limit = {
-                is_at_war = no
-            }
-            add_modifier = {
-                modifier = "aiboost_spaceport_modifier_1"
-                days = 365
-            }
-        }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.206
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-        add_modifier = {
-            modifier = "aiboost_resource_modifier_60"
-            days = 365
-        }
-        if = {
-            limit = {
-                is_at_war = no
-            }
-            add_modifier = {
-                modifier = "aiboost_spaceport_modifier_1"
-                days = 365
-            }
-        }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.207
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-        add_modifier = {
-            modifier = "aiboost_resource_modifier_70"
-            days = 365
-        }
-        if = {
-            limit = {
-                is_at_war = no
-            }
-            add_modifier = {
-                modifier = "aiboost_spaceport_modifier_1"
-                days = 365
-            }
-        }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.208
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-        add_modifier = {
-            modifier = "aiboost_resource_modifier_80"
-            days = 365
-        }
-        if = {
-            limit = {
-                is_at_war = no
-            }
-            add_modifier = {
-                modifier = "aiboost_spaceport_modifier_1"
-                days = 365
-            }
-        }
-        }
-    }
-}
-
-country_event = {
-    id = aiboost.209
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-        add_modifier = {
-            modifier = "aiboost_resource_modifier_90"
-            days = 365
-        }
-        if = {
-            limit = {
-                is_at_war = no
-            }
-            add_modifier = {
-                modifier = "aiboost_spaceport_modifier_1"
-                days = 365
-            }
-        }
-        }
-    }
-}
-
-
-country_event = {
-    id = aiboost.2100
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-            add_modifier = {
-                modifier = "aiboost_resource_modifier_100"
-                days = 365
-            }
-            if = {
-                limit = {
-                    is_at_war = no
+            hidden_effect = {
+                add_modifier = {
+                    modifier = "aiboost_resource_modifier_200"
+                    days = -1
                 }
                 add_modifier = {
                     modifier = "aiboost_spaceport_modifier_2"
-                    days = 365
+                    days = -1
                 }
             }
         }
     }
 }
 
-country_event = {
-    id = aiboost.2150
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-            add_modifier = {
-                modifier = "aiboost_resource_modifier_150"
-                days = 365
-            }
-            if = {
-                limit = {
-                    is_at_war = no
-                }
-                add_modifier = {
-                    modifier = "aiboost_spaceport_modifier_2"
-                    days = 365
-                }
-            }
-        }
-    }
-}
 
-country_event = {
-    id = aiboost.2200
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-            add_modifier = {
-                modifier = "aiboost_resource_modifier_200"
-                days = 365
-            }
-            if = {
-                limit = {
-                    is_at_war = no
-                }
-                add_modifier = {
-                    modifier = "aiboost_spaceport_modifier_2"
-                    days = 365
-                }
-            }
-        }
-    }
-}
 
