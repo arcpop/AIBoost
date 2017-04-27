@@ -5,7 +5,6 @@ country_event = {
     id = aiboost.1
     hide_window = yes
     trigger = {
-        is_ai = no
         NOT = { has_global_flag = aiboost_initialized }
     }
     immediate = {
@@ -22,7 +21,10 @@ country_event = {
                 }
             }
         }
-        country_event = { id = aiboost.10 days = 3600 }
+        
+        hidden_effect = {
+            country_event = { id = aiboost.10 days = 3600 }
+        }
     }
 }
 
@@ -52,7 +54,9 @@ country_event = {
                 }
             }
         }
-        country_event = { id = aiboost.20 days = 3600 }
+        hidden_effect = {
+            country_event = { id = aiboost.20 days = 3600 }
+        }
     }
 }
 
@@ -78,7 +82,9 @@ country_event = {
                 }
             }
         }
-        country_event = { id = aiboost.30 days = 3600 }
+        hidden_effect = {
+            country_event = { id = aiboost.30 days = 3600 }
+        }
     }
 }
 
@@ -104,7 +110,9 @@ country_event = {
                 }
             }
         }
-        country_event = { id = aiboost.40 days = 3600 }
+        hidden_effect = {
+            country_event = { id = aiboost.40 days = 3600 }
+        }
     }
 }
 
@@ -130,7 +138,9 @@ country_event = {
                 }
             }
         }
-        country_event = { id = aiboost.50 days = 3600 }
+        hidden_effect = {
+            country_event = { id = aiboost.50 days = 3600 }
+        }
     }
 }
 
@@ -156,7 +166,9 @@ country_event = {
                 }
             }
         }
-        country_event = { id = aiboost.60 days = 3600 }
+        hidden_effect = {
+            country_event = { id = aiboost.60 days = 3600 }
+        }
     }
 }
 
@@ -182,7 +194,9 @@ country_event = {
                 }
             }
         }
-        country_event = { id = aiboost.70 days = 3600 }
+        hidden_effect = {
+            country_event = { id = aiboost.70 days = 3600 }
+        }
     }
 }
 
@@ -208,7 +222,9 @@ country_event = {
                 }
             }
         }
-        country_event = { id = aiboost.80 days = 3600 }
+        hidden_effect = {
+            country_event = { id = aiboost.80 days = 3600 }
+        }
     }
 }
 
@@ -234,7 +250,9 @@ country_event = {
                 }
             }
         }
-        country_event = { id = aiboost.90 days = 3600 }
+        hidden_effect = {
+            country_event = { id = aiboost.90 days = 3600 }
+        }
     }
 }
 
@@ -260,7 +278,9 @@ country_event = {
                 }
             }
         }
-        country_event = { id = aiboost.100 days = 3600 }
+        hidden_effect = {
+            country_event = { id = aiboost.100 days = 3600 }
+        }
     }
 }
 
@@ -286,7 +306,9 @@ country_event = {
                 }
             }
         }
-        country_event = { id = aiboost.150 days = 18000 }
+        hidden_effect = {
+            country_event = { id = aiboost.150 days = 18000 }
+        }
     }
 }
 
@@ -312,7 +334,9 @@ country_event = {
                 }
             }
         }
-        country_event = { id = aiboost.200 days = 18000 }
+        hidden_effect = {
+            country_event = { id = aiboost.200 days = 18000 }
+        }
     }
 }
 
