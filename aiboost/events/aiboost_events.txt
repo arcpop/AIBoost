@@ -46,6 +46,10 @@ country_event = {
                     modifier = "aiboost_spaceport_modifier_1"
                     days = 3600
                 }
+                add_modifier = {
+                    modifier = "aiboost_spaceport_modifier_1"
+                    days = 3600
+                }
             }
         }
         country_event = { id = aiboost.20 days = 3600 }
